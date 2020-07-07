@@ -7,6 +7,9 @@
     </head>
     <body>
         <div id="app">
+            <p>{{ message.greeting }}</p>
+            <p>{{ message.greeting.length }}</p>
+            <p>{{ message.fruitList[message.num] }}</p>
             <button v-on:click="show=!show">切り替え</button>
             <transition>
                 <p v-if="show">Hello Vue.js!</p>
